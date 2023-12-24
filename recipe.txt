@@ -1,0 +1,105 @@
+# Pure Harvest 
+a recipe generater web app
+ step 1 -a chat based language model system 
+1.1
+provide personalized receipes based on:
+1.Dietary Preferences: Customization based on whether the user has specific preferences like vegan, vegetarian, or other dietary choices
+2.Dietary Restrictions:Consideration of any restrictions or allergies, ensuring recipes align with specific dietary needs.
+3.Available Ingredients:Utilization of ingredients accessible to the user for a practical and convenient cooking experience.
+4.Cooking Time: (in minutes):Optimization of recipes based on the user's available time for preparation and cooking.
+5.Flavor Preferences:Tailoring recipes to match the user's taste preferences, such as spicy, savory, or sweet.
+6.Difficulty Level:Adapting recipes to the user's cooking skill level, whether they are beginners or experienced chefs.
+
+1.2
+1.Number of ingredients outside of the available ingredients shouldn't be more. 
+2.Try to stay within the limit of available ingedients. 
+
+1.3 
+#  add following elements in the receipe suggestions
+
+Ensure to include the following elements in the recipe suggestions:
+1. recipe name
+2. Ingredients
+3. Instructions
+4. Cooking Time(in minutes)
+5. Cuisine Type
+
+Response should be in the following JSON Format
+
+"responses": [
+    {
+        "name": "<name of recipe>",
+        "ingredients": ["ingredient1", "ingredient2", "ingredient3"],
+        "instructions": "Step 1: ... \nStep 2: ... \nStep 3: ...",
+        "cooking_time": <cooking time in minutes>,
+        "servings": <number of servings>,
+        "cuisine_type": "<cuisine type>"
+    }
+]
+
+
+"responses": [
+    {
+        "name": "Quinoa and Black Bean Salad",
+        "ingredients": [
+            "1 cup quinoa",
+            "1 can black beans, drained and rinsed",
+            "1 cup cherry tomatoes, halved",
+            "1 cucumber, diced",
+            "1/2 red onion, finely chopped",
+            "1/4 cup fresh cilantro, chopped",
+            "Juice of 2 limes",
+            "3 tablespoons olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": "1. Rinse quinoa under cold water. Cook quinoa according to package instructions.\n" +
+                        "2. In a large bowl, combine cooked quinoa, black beans, cherry tomatoes, cucumber, red onion, and cilantro.\n" +
+                        "3. In a small bowl, whisk together lime juice, olive oil, salt, and pepper.\n" +
+                        "4. Pour the dressing over the quinoa mixture and toss to combine.\n" +
+                        "5. Adjust seasoning if needed. Chill in the refrigerator for at least 30 minutes before serving.",
+        "cooking_time": 25,
+        "servings": 4,
+        "cuisine_type": "Mexican"
+    }
+]
+
+Recipe: Quinoa and Black Bean Salad
+
+Dietary Preferences:
+
+Vegan
+Vegetarian
+Gluten-Free
+Dietary Restrictions:
+
+No meat or animal products
+No gluten-containing ingredients
+Available Ingredients:
+
+Quinoa
+Black beans
+Cherry tomatoes
+Cucumber
+Red onion
+Fresh cilantro
+Lime
+Olive oil
+Salt
+Pepper
+Cooking Time:
+
+25 minutes
+Flavor Preferences:
+
+Balanced and fresh flavors with a mix of citrusy lime, savory black beans, and the crunch of vegetables.
+Difficulty Level:
+
+Easy to Moderate
+
+
+
+
+
+
+
+
